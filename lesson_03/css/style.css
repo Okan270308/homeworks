@@ -1,0 +1,39 @@
+@import url("reset.css");
+
+[class*="_text"]{
+    max-width: 900px;
+}
+
+#top{
+    color: blue;
+    font-size: 40px;
+}
+div.header_text{
+    color: rgb(33, 4, 147);
+}
+
+.geography_text p{
+    color: brown;
+}
+.facts_text > p{
+    color: chocolate;
+}
+
+.facts_title,
+.geography_title{
+    color: aqua;
+    font-size: 24px;
+}
+.ukrainians_text + p{
+    color: blue;
+    max-width: 900px;
+}
+.ukrainians_title ~ div{
+    color: blueviolet;
+} 
+.list_item.fact{
+    color: brown;
+}
+.list .list_item1 {
+    color: aqua;
+}
