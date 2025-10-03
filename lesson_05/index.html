@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,700&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Lesson 5</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="block-properties_title">
+          Властивості блоків
+        </h1>
+      </header>
+      <main>
+        <section class="block-size">
+          <div class="block-properties_retreat retreat">
+            <h2 class="retreat_title">
+              Відступи padding та
+              margin
+            </h2>
+            <div class="retreat_content retreat-content">
+              <div class="retreat-content_padding">
+                <p>
+                  <span class="property">Властивість
+                    padding</span> — це внутрішній
+                  відступ. Використовується
+                  для
+                  відступів від кордону блоку всередину блоку (елементу), а не
+                  між
+                  блоками (елементами). Значення можуть бути лише додатними,
+                  тобто
+                  більше або рівне нулю.
+                </p>
+                <p>
+                  Простими словами padding — це <span>Відступи ВСЕРЕДИНІ
+                    об'єкту</span>, від кордонів об'єкта ДО ЙОГО КОНТЕНТУ.
+                  <span>НЕ
+                    успадковується.</span>
+
+                </p>
+                <p>
+                  При вказанні значення у відсотках, відсоток береться від
+                  ширини
+                  батьківського об'єкта, навіть для вертикальних відступів.
+                </p>
+              </div>
+              <div class="retreat-content_margin">
+                <p>
+                  <span class="property"> Властивість margin</span> — Зовнішній
+                  відступ. Використовується для
+                  відступів між блоками (елементами), рекомендується робити
+                  відступи зверху вниз (margin-bottom) зліва на право. Значення
+                  можуть бути від'ємними! НЕ успадковується
+                </p>
+                <p>
+                  Правило для відступів margin між елементами — відступи margin
+                  задаємо на одному рівні вкладеності.
+                </p>
+                <p>
+                  <span>Не допускається</span> відступ від
+                  дочірнього елементу до наступного батьківського, тобто відступ
+                  з 2-го рівня вкладеності до першого
+                </p>
+              </div>
+              <div class="retreat-content_сollapsing">
+                <p>
+                  <span class="property"> Схлопування margin</span> (накладання
+                  одного margin на інший) —
+                  відбувається в кількох випадках:
+                </p>
+                <p>
+                  1. Коли контент відсутній в блоках, тобто є два пустих
+                  сусідніх
+                  блоки з встановленими зовнішніми відступами.
+                </p>
+                <p>
+                  2. Коли між двома сусідніми елементами заданий зовнішній
+                  відступ margin як це описано в прикладі вище.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="block-size">
+          <div class="block-size_retreat retreat">
+            <h2 class="retreat_title">
+              Властивості для встановлення розмірів елементів
+            </h2>
+            <div class="retreat_content retreat-content">
+              <div class="retreat-content_width">
+                <p>
+                  <span class="property">Властивість width</span> - чітко задає
+                  ширину блочного
+                  (блочно-рядкового) об'єкту, <span>НЕ працює з рядковими
+                    об'єктами</span>
+                </p>
+                <p>
+                  <span class="property">Bластивість max-width</span> –
+                  встановлює **максимальну
+                  ширину** блочних (блочно-рядкових) тегів, тобто блок не буде
+                  більшим за вказану ширину. <span>НЕ працює зі рядковими
+                    об'єктами. Не успадковується.</span>
+                </p>
+                <p>
+                  <span class="property">Властивість min-width </span> —
+                  встановлює мінімальну ширину блочних (блочно-рядкових) тегів,
+                  тобто блок не буде меншим за вказану ширину. <span>Не
+                    успадковується.НЕ працює зі рядковими об'єктами.</span>
+                </p>
+              </div>
+              <div class="retreat-content_height">
+                <p>
+                  <span class="property"> Властивість height</span> — встановлює
+                  чітку висоту блочних (блочно-рядкових) тегів. <span>Не
+                    успадковується.НЕ працює зі рядковими об'єктами</span>
+                </p>
+                <p class="importantly">
+                  Ніколи не встановлюйте фіксовану висоту для контентних
+                  (текстових) елементів, тому що при зміні контенту (тексту)
+                  будуть проблеми.
+                </p>
+                <p>
+                  <span class="property"> Властивість
+                    min-height</span> — встановлює мінімальну висоту блочних
+                  (блочно-рядкових) тегів, тобто блок не буде меншим за вказану
+                  висоту.<span>Не
+                    успадковується.НЕ працює зі рядковими об'єктами</span>
+                </p>
+                <p>
+                  <span class="property"> Властивість
+                    max-heightt</span> — встановлює максимальну висоту блочних
+                  (блочно-рядкових) тегів, тобто блок не буде меншим за вказану
+                  висоту.<span>Не
+                    успадковується.НЕ працює зі рядковими об'єктами</span>
+                </p>
+                <p class="importantly">
+                  Ніколи не обмежуйте висоту для контентних (текстових)
+                  елементів, тому що при додаванні (збільшені кількості)
+                  контенту будуть проблеми
+                </p>
+              </div>
+
+            </div>
+          </div>
+        </section>
+        <section class="choose-us">
+          <h3 class="choose-us_title">WHY CHOOSE US?</h3>
+          <div class="choose-us_items1">
+            <div class="choose-us_item item">
+              <img class="item_svg" src="img/planet-earth.svg"
+                alt="planet-earth">
+              <h4 class="item_title">GLOBAL DELIVERY</h4>
+              <div class="content">
+                <p>Experience Hassle-Free Shipping and Seamless Global
+                  Connectivity
+                  with Our Trustworthy and Efficient Delivery Service, Bringing
+                  the
+                  World to Your Fingertips!</p>
+              </div>
+            </div>
+            <div class="choose-us_item item">
+              <img class="item_svg" src="img/package-box.svg" alt="package-box">
+              <h4 class="item_title">FREE SHIPPING</h4>
+              <div class="content">
+                <p>Shop to Your Heart's Content Without Worrying About Shipping
+                  Costs: Our Free Shipping Service Delivers Your Purchases with
+                  a
+                  Smile, Straight to Your Doorstep!</p>
+              </div>
+            </div>
+            <div class="choose-us_item item">
+              <img class="item_svg" src="img/phone.svg" alt="phone">
+              <h4 class="item_title">24/7 SUPPORTING</h4>
+              <div class="content">
+                <p>Shop with Confidence Anytime, Anywhere: Our Free Shipping
+                  Service
+                  Comes with 24/7 Support to Ensure Your Packages Arrive Safely
+                  and
+                  On Time!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="choose-us_items2">
+            <div class="choose-us_item item">
+              <img class="item_svg" src="img/email.svg" alt="email">
+              <h4 class="item_title">DAILY EMAIL</h4>
+              <div class="content">
+                <p>Stay Up-to-Date with Your Deliveries: Enjoy the Convenience
+                  of
+                  Daily Email Updates with Our Free Shipping Service, Making
+                  Your
+                  Online Shopping Experience Even More Enjoyable!
+                </p>
+              </div>
+            </div>
+            <div class="choose-us_item item">
+              <img class="item_svg" src="img/credit-card.svg" alt="credit-card">
+              <h4 class="item_title">EASY PAYMENT</h4>
+              <div class="content">
+                <p>Shop and Pay with Ease: Our Free Shipping Service Not Only
+                  Delivers Your Packages for Free, but Also Offers Easy Payment
+                  Options, Making Your Shopping Experience a Breeze!
+                </p>
+              </div>
+            </div>
+            <div class="choose-us_item item">
+              <img class="item_svg" src="img/badge.svg" alt="badge">
+              <h4 class="item_title">MONTHLY VOUCHER</h4>
+              <div class="content">
+                <p>More Than Just Free Shipping: Our Service Rewards Your
+                  Loyalty
+                  with Monthly Vouchers, Giving You More Reasons to Shop and
+                  Save on
+                  Your Favorite Products!
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+      </footer>
+    </div>
+
+  </body>
+</html>
