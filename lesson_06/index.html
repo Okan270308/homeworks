@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Lesson 6</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 id="block">
+          CSS-властивості оформлення блоків
+        </h1>
+      </header>
+      <main>
+        <section class="main__border main-border">
+          <div class="main-border__definition">
+            <p> Властивість border — встановлює товщину, стиль та колір межі
+              (кордону) елемента. <span>Не успадковується.</span></p>
+          </div>
+          <div class="main-border__solid solid ">
+            <h2 class="solid__title">
+              Solid — суцільна лінія
+            </h2>
+            <div class="solid__example">
+              Там, за віками, за гірким туманом,
+              де трубить вічність у Роландів ріг,
+              любов була єдиним талісманом,
+              а талісман ще звався — оберіг
+            </div>
+          </div>
+          <div class="main-border__dotted dotted ">
+            <h2 class="dotted__title">
+              Dotted — лінія крапками
+            </h2>
+            <div class="dotted__example">
+              Було життя осяяне красою,
+              любов і честь цінились над життя.
+              І що там смерть з великою косою? —
+              мужчина, лицар, сонячне дитя!
+            </div>
+          </div>
+          <div class="main-border__dashed  dashed ">
+            <h2 class="dashed__title">
+              Dashed — пунктирна лінія
+            </h2>
+            <div class="dashed__example">
+              В моїх садах мелодії Провансу,
+              і жінка, жінка, жінка всіх віків! —
+              за неї лицар гинув без авансу,
+              вона чекала цокоту підків.
+            </div>
+          </div>
+          <div class="main-border__double  double  ">
+            <h2 class="double __title">
+              Double — подвійна лінія
+            </h2>
+            <div class="double__example">
+              В монастирях, фортецях і столицях,
+              з глухих палаців, схожих на тюрму,
+              якщо він лицар, —
+              о, якщо він лицар! —
+              вона троянду кидала йому.
+            </div>
+          </div>
+          <div class="main-border__none none  ">
+            <h2 class="none __title">
+              Скасування border для однієї сторони border-bottom: none;
+            </h2>
+            <div class="none__example">
+              Гриміли вальси, пурхали амури,
+              давили будні, смикала сім'я, —
+              жіноча туга билася об мури:
+              де лицар мій, молитва де моя?!
+            </div>
+          </div>
+          <div class="main-border__confused   confused ">
+            <h2 class="confused__title">
+              Змішаний border
+            </h2>
+            <div class="confused__example">
+              І хоч в'яжіть, хоч плітку або клітку,
+              хоч бозна-хто розкаже бозна-де,
+              якщо він лицар — жінка кине квітку,
+              на все життя очима проведе.
+            </div>
+          </div>
+          <div class="main-border__definition definition-outline">
+            <p> Властивість outline — встановлює товщину, стиль та колір
+              обвідки навколо елемента (не впливає на оточення). Outline
+              знаходиться навколо елементу (обводить ззовні елемент), в той
+              час, як border знаходиться всередині елементу та окреслює його
+              кордони.
+            </p>
+          </div>
+          <div class="definition-outline__example outline">
+            Це як гіпноз, як магія безодні,
+            як струм жаги, що в голосі болів,
+            коли вуста пекучі, аж холодні,
+            уже не здатні вимовити слів.
+          </div>
+          <div class="main-border__definition definition-radius">
+            <p> Властивість border-radius — встановлює радіус заокруглення
+              кутів блоку. <span>Не успадковується.</span>
+            </p>
+          </div>
+          <div class="definition-radius__example ">
+            А вечір пролітає, наче крижень,
+            черкнувши місто синіми крильми.
+            У непритомне полум'я наближень
+            ми вже йдемо, покірніші, як ми.
+          </div>
+          <div class="main-border__definition">
+            <p> Властивість box-shadow — додає тінь до елементу. <span>Не
+                успадковується.</span></p>
+          </div>
+          <div class="main-border__box-shadow   box-shadow">
+            <h2 class="box-shadow__title">
+              Тінь всередину об'єкту
+            </h2>
+            <div class="box-shadow__example_inset">
+              І хоч в'яжіть, хоч плітку або клітку,
+              хоч бозна-хто розкаже бозна-де,
+              якщо він лицар — жінка кине квітку,
+              на все життя очима проведе.
+            </div>
+          </div>
+          <div class="main-border__box-shadow   box-shadow">
+            <h2 class="box-shadow__title">
+              Тінь зовні об'єкта
+            </h2>
+            <div class="box-shadow__example">
+              І хоч в'яжіть, хоч плітку або клітку,
+              хоч бозна-хто розкаже бозна-де,
+              якщо він лицар — жінка кине квітку,
+              на все життя очима проведе.
+            </div>
+          </div>
+          <div class="main-border__definition">
+            <p> Властивість opacity — встановлює рівень прозорості елемента.
+              <span>Не
+                успадковується.</span></p>
+          </div>
+          <div class="main-border__opacity   opacity">
+            <h2 class="opacity__title">
+              Елемент прозорий
+            </h2>
+            <div class="opacity__example_transparent">
+
+              І хоч в'яжіть, хоч плітку або клітку,
+              хоч бозна-хто розкаже бозна-де,
+              якщо він лицар — жінка кине квітку,
+              на все життя очима проведе.
+            </div>
+          </div>
+          <div class="main-border__opacity   opacity">
+            <h2 class="opacity__title">
+              Елемент напівпрозорий
+            </h2>
+            <div class="opacity__example_transparent2">
+              І хоч в'яжіть, хоч плітку або клітку,
+              хоч бозна-хто розкаже бозна-де,
+              якщо він лицар — жінка кине квітку,
+              на все життя очима проведе.
+            </div>
+          </div>
+          <div class="main-border__definition">
+            <p> Властивість visibility — управляє відображенням елемента.
+            </p>
+          </div>
+          <div class="main-border__visibility   visibility">
+            <h2 class="visibility__title">
+              Visible — відображає об'єкт (за замовченням)
+            </h2>
+            <h2 class="visibility__title">
+              Hidden — ховає об'єкт (з об'єктом не можна взаємодіяти).
+            </h2>
+            <div class="visibility__example">
+              І хоч в'яжіть, хоч плітку або клітку,
+              хоч бозна-хто розкаже бозна-де,
+              якщо він лицар — жінка кине квітку,
+              на все життя очима проведе.
+            </div>
+          </div>
+        </section>
+        <section class="main-background">
+          <div class="background">
+            <p> Властивість background
+            </div>
+            <div class="background__color background-color">
+              <h2 class="background-color__title">
+                background-color
+              </h2>
+              <div class="background-color__block">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aliquam officia magni laborum perspiciatis magnam quia unde
+                eveniet, inventore doloremque in necessitatibus ad dolore
+                numquam ratione iusto deserunt eius sequi rem.
+              </div>
+            </div>
+            <div class="background__img   background-img">
+              <h2 class="background-img__title">
+                background-img
+              </h2>
+              <div class="background-img__block">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea
+                quibusdam cupiditate voluptatibus officiis velit natus, at
+                laboriosam sit odio placeat libero dolorem suscipit aut
+                veniam molestiae qui magni excepturi ad. Lorem ipsum dolor
+                sit amet, consectetur adipisicing elit. Ea
+                quibusdam cupiditate voluptatibus officiis velit natus, at
+                laboriosam sit odio placeat libero dolorem suscipit aut
+                veniam molestiae qui magni excepturi ad. Lorem ipsum dolor
+                sit amet, consectetur adipisicing elit. Ea
+                quibusdam cupiditate voluptatibus officiis velit natus, at
+                laboriosam sit odio placeat libero dolorem suscipit aut
+                veniam molestiae qui magni excepturi ad. Lorem ipsum dolor
+                sit amet, consectetur adipisicing elit. Ea
+                quibusdam cupiditate voluptatibus officiis velit natus, at
+                laboriosam sit odio placeat libero dolorem suscipit aut
+                veniam molestiae qui magni excepturi ad.
+              </div>
+              <div class="background__no-repeat   background-no-repeat">
+                <h2 class="no-repeat__title">
+                  background:no-repeat
+                </h2>
+                <div class="no-repeat__block">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Vel ex nisi itaque, tempora distinctio fugiat numquam
+                  velit esse perspiciatis necessitatibus! Eveniet sunt
+                  reiciendis voluptatem iure quidem? Doloribus, accusamus
+                  voluptatum! Harum.
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Vel ex nisi itaque, tempora distinctio fugiat numquam
+                  velit esse perspiciatis necessitatibus! Eveniet sunt
+                  reiciendis voluptatem iure quidem? Doloribus, accusamus
+                  voluptatum! Harum.
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Vel ex nisi itaque, tempora distinctio fugiat numquam
+                  velit esse perspiciatis necessitatibus! Eveniet sunt
+                  reiciendis voluptatem iure quidem? Doloribus, accusamus
+                  voluptatum! Harum. Lorem ipsum dolor sit, amet consectetur
+                  adipisicing elit.
+                  Vel ex nisi itaque, tempora distinctio fugiat numquam
+                  velit esse perspiciatis necessitatibus! Eveniet sunt
+                  reiciendis voluptatem iure quidem? Doloribus, accusamus
+                  voluptatum! Harum.
+                </div>
+              </div>
+            </div>
+            <div class="background__repeat   background-repeat">
+              <h2 class="background-repeat__title">
+                background-repeat
+              </h2>
+              <div class="background-repeat__block">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea
+                quibusdam cupiditate voluptatibus officiis velit natus, at
+                laboriosam sit odio placeat libero dolorem suscipit aut
+                veniam molestiae qui magni excepturi ad. Lorem ipsum dolor
+                sit amet, consectetur adipisicing elit. Ea
+                quibusdam cupiditate voluptatibus officiis velit natus, at
+                laboriosam sit odio placeat libero dolorem suscipit aut
+                veniam molestiae qui magni excepturi ad. Lorem ipsum dolor
+                sit amet, consectetur adipisicing elit. Ea
+                quibusdam cupiditate voluptatibus officiis velit natus, at
+                laboriosam sit odio placeat libero dolorem suscipit aut
+                veniam molestiae qui magni excepturi ad. Lorem ipsum dolor
+                sit amet, consectetur adipisicing elit. Ea
+                quibusdam cupiditate voluptatibus officiis velit natus, at
+                laboriosam sit odio placeat libero dolorem suscipit aut
+                veniam molestiae qui magni excepturi ad.
+              </div>
+            </div>
+            <div class="background__position  position">
+              <h2 class="position__title">
+                background-position
+              </h2>
+              <div class="position__block">
+              </div>
+              <div class="background__attachment attachment">
+                <h2 class="attachment__title">
+                  background-attachment
+                </h2>
+                <div class="attachment__block">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Ea
+                  quibusdam cupiditate voluptatibus officiis velit natus, at
+                  laboriosam sit odio placeat libero dolorem suscipit aut
+                  veniam molestiae qui magni excepturi ad. Lorem ipsum dolor
+                  sit amet, consectetur adipisicing elit. Ea
+                  quibusdam cupiditate voluptatibus officiis velit natus, at
+                  laboriosam sit odio placeat libero dolorem suscipit aut
+                  veniam molestiae qui magni excepturi ad. Lorem ipsum dolor
+                  sit amet, consectetur adipisicing elit. Ea
+                  quibusdam cupiditate voluptatibus officiis velit natus, at
+                  laboriosam sit odio placeat libero dolorem suscipit aut
+                  veniam molestiae qui magni excepturi ad. Lorem ipsum dolor
+                  sit amet, consectetur adipisicing elit. Ea
+                  quibusdam cupiditate voluptatibus officiis velit natus, at
+                  laboriosam sit odio placeat libero dolorem suscipit aut
+                  veniam molestiae qui magni excepturi ad.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Ea
+                  quibusdam cupiditate voluptatibus officiis velit natus, at
+                  laboriosam sit odio placeat libero dolorem suscipit aut
+                  veniam molestiae qui magni excepturi ad. Lorem ipsum dolor
+                  sit amet, consectetur adipisicing elit. Ea
+                  quibusdam cupiditate voluptatibus officiis velit natus, at
+                  laboriosam sit odio placeat libero dolorem suscipit aut
+                  veniam molestiae qui magni excepturi ad. Lorem ipsum dolor
+                  sit amet, consectetur adipisicing elit. Ea
+                  quibusdam cupiditate voluptatibus officiis velit natus, at
+                  laboriosam sit odio placeat libero dolorem suscipit aut
+                  veniam molestiae qui magni excepturi ad. Lorem ipsum dolor
+                  sit amet, consectetur adipisicing elit. Ea
+                  quibusdam cupiditate voluptatibus officiis velit natus, at
+                  laboriosam sit odio placeat libero dolorem suscipit aut
+                  veniam molestiae qui magni excepturi ad.
+                </div>
+              </div>
+              <div class="background__clip clip">
+                <h2 class="clip__title">
+                  background-clip
+                </h2>
+                <div class="clip__block">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Ea
+                  quibusdam cupiditate voluptatibus officiis velit natus, at
+                  laboriosam sit odio placeat libero dolorem suscipit aut
+                  veniam molestiae qui magni excepturi ad. Lorem ipsum dolor
+                  sit amet, consectetur adipisicing elit. Ea
+                  quibusdam cupiditate voluptatibus officiis velit natus, at
+                  laboriosam sit odio placeat libero dolorem suscipit aut
+                  veniam molestiae qui magni excepturi ad. Lorem ipsum dolor
+                  sit amet, consectetur adipisicing elit. Ea
+                  quibusdam cupiditate voluptatibus officiis velit natus, at
+                  laboriosam sit odio placeat libero dolorem suscipit aut
+                  veniam molestiae qui magni excepturi ad. Lorem ipsum dolor
+                  sit amet, consectetur adipisicing elit. Ea
+                  quibusdam cupiditate voluptatibus officiis velit natus, at
+                  laboriosam sit odio placeat libero dolorem suscipit aut
+                  veniam molestiae qui magni excepturi ad.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Ea
+
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="homework">
+            <h3 class="homework__lesson">
+              Домашня робота
+            </h3>
+            <div class="furniture">
+              <div class="furniture__container">
+                <div class="furniture__info">
+                  <div class="furniture__subtitle">WELCOME TO OUR
+                  </div>
+                  <div class="furniture__title">FURNITURE <br>
+                    <span>GALLERY</span>
+                  </div>
+                  <div class="furniture__line"></div>
+                  <div class="furniture__description">BROWSE OUR
+                    SELECTIONS
+                  </div>
+                  <div class="furniture__text">Featuring sleek designs and
+                    innovative materials that <br> seamlessly blend form
+                    and
+                    function.</div>
+                </div>
+              </div>
+
+            </div>
+            <div class="list">
+              <ul class="items">
+                <li class="item">Unlimited product updates
+                </li>
+                <li class="item">Unlimited product </li>
+                <li class="item">Unlimited product
+                </li>
+                <li class="item-gray">1GB Cloud storage
+                </li>
+                <li class="item-gray">Email and community support
+                </li>
+              </ul>
+            </div>
+
+          </section>
+        </main>
+        <footer class="footer">
+          <a href="#block">На гору</a>
+        </footer>
+      </div>
+    </body>
+  </html>

@@ -1,0 +1,234 @@
+@import url("reset.css");
+@import url("fonts.css");
+
+body {
+  font-family: Lato, sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+h1 {
+  font-size: 45px;
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 25px;
+}
+span {
+  color: red;
+}
+[class*="main-border__"] {
+  margin-bottom: 25px;
+  max-width: 1330px;
+}
+
+[class*="__title"] {
+  text-decoration: underline;
+  color: rgb(47, 9, 104);
+  margin-bottom: 25px;
+}
+.main-border {
+  max-width: 1330px;
+  margin: 0 auto;
+}
+.main-border__definition {
+  font-style: oblique;
+  background-color: antiquewhite;
+}
+.solid__example {
+  border: 5px solid red;
+}
+
+.dotted__example {
+  border: 5px dotted red;
+}
+
+.dashed__example {
+  border: 5px dashed red;
+}
+
+.double__example {
+  border: 5px double red;
+}
+.none__example {
+  border: 5px double red;
+  border-bottom: none;
+}
+.confused__example {
+  border-top: 1px solid red;
+  border-right: 2px dotted blue;
+  border-bottom: 3px double green;
+  border-left: 4px dashed yellow;
+}
+.outline {
+  border: 5px dashed red;
+  outline: 5px solid blue;
+  margin-bottom: 25px;
+}
+.definition-radius__example {
+  border: 5px double red;
+  border-radius: 50px;
+  margin-bottom: 25px;
+}
+.box-shadow__example_inset {
+  box-shadow: inset 50px 7px 6px 7px rgba(183, 9, 9, 0.5);
+}
+.box-shadow__example {
+  box-shadow: 7px 7px 6px 7px rgba(183, 9, 9, 0.5);
+}
+.opacity__example_transparent {
+  opacity: 0;
+}
+.opacity__example_transparent2 {
+  opacity: 0.5;
+}
+.visibility__example {
+  visibility: hidden;
+}
+.main-background {
+  max-width: 1330px;
+  margin: 0 auto;
+}
+.main-background * {
+  margin-bottom: 25px;
+}
+.background {
+  text-align: center;
+  font-size: 45px;
+}
+.background-color__block {
+  background-color: blueviolet;
+}
+.background-img__block {
+  background-image: url(../img/Parent.png);
+  width: 100%;
+}
+.no-repeat__block {
+  background-image: url(../img/Parent.png);
+  width: 100%;
+  background-repeat: no-repeat;
+}
+.background-repeat__block {
+  background-image: url(../img/Parent.png);
+  background-repeat: repeat;
+  width: 100%;
+}
+.position__block {
+  background-image: url(../img/Parent.png);
+  width: 100%;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+.attachment__block {
+  background: url(../img/Parent.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  background-attachment: fixed;
+}
+.clip__block {
+  background: linear-gradient(
+    230deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: text;
+  color: transparent;
+}
+/* ----------------furniture---------------------------- */
+
+.homework__lesson {
+  font-size: 55px;
+  text-align: center;
+  margin-bottom: 45px;
+  background: linear-gradient(
+    230deg,
+    rgb(21, 1, 34) 0%,
+    rgb(136, 221, 170) 50%,
+    rgb(165, 98, 4) 100%
+  );
+  background-clip: text;
+  color: transparent;
+  letter-spacing: 25px;
+}
+.furniture {
+  padding-top: 114px;
+  padding-bottom: 110px;
+  background: url("../img/Rectangle\ 1.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 30px;
+}
+.furniture__container {
+  max-width: 1390px;
+  margin: 0 auto;
+}
+.furniture__info {
+  padding-left: 750px;
+}
+
+.furniture__subtitle,
+.furniture__description {
+  font-size: 20px;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+.furniture__title {
+  font-family: "Montserrat", sans-serif;
+  color: #2f302c;
+  font-size: 96px;
+  font-weight: 800;
+  line-height: 1.04;
+  text-decoration: none;
+  margin-bottom: 16px;
+}
+.furniture__title span {
+  font-weight: 700;
+  color: #2f302c;
+}
+.furniture__line {
+  border-bottom: 1px solid #2f302c;
+  max-width: 308px;
+  margin-bottom: 36px;
+}
+
+.furniture__text {
+  color: #7e7f7c;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.25;
+}
+.list {
+  max-width: 350px;
+  background-color: rgba(225, 244, 255, 1);
+  padding: 16px 40px 16px;
+  margin: 0 auto 30px;
+  border-radius: 8px;
+}
+.item,
+.item-gray {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  margin-bottom: 15px;
+  padding-top: 7px;
+  padding-left: 36px;
+  font-size: 14px;
+  color: #252b42;
+  line-height: 1.4;
+  min-height: 32px;
+  letter-spacing: 0.20000000298023224px;
+}
+.item {
+  background: url("../img/Check-badge.svg") no-repeat;
+}
+.item-gray {
+  background: url("../img/Check-badge-gr.svg") no-repeat;
+}
+.footer {
+  display: block;
+  text-align: center;
+}
