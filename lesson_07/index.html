@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap"
+      rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Lesson_7</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="block">
+        Заняття 7 Псевдокласи та псевдоелементи
+      </h1>
+    </header>
+    <main>
+      <section class="main__pseudo-classes pseudo-classes">
+        <h2 class="pseudo-classes__title">Псевдокласи</h2>
+        <h3 class="pseudo-classes__subtitle"> Псевдокласи стану:</h3>
+        <div class="pseudo-classes__block ">
+          <div class="hover__block">
+            <a href="#" class="hover__link"> : hover </a>
+            <div class="hover__img"> <img src="img/Бе.jpg"
+                alt=" Попугай з розкритими крилами"></div>
+            <p>Наведи сюди</p>
+          </div>
+          <div class="active__block">
+            <a href="#" class="active__link"> : active </a>
+            <div class="hover__img"> <img src="img/Бе.jpg"
+                alt=" Попугай з розкритими крилами"></div>
+            <p>Активуй тут</p>
+          </div>
+          <div class="focus__block">
+            <a href="#" class="focus__link"> : focus
+            </a>
+            <a href="#" class="focus__link"> : focus
+            </a><a href="#" class="focus__link"> : focus
+            </a><a href="#" class="focus__link"> : focus
+            </a><a href="#" class="focus__link"> : focus
+            </a>
+            <p>Фокусни на посилання</p>
+          </div>
+          <div class="focus__block ">
+            <a href="https://www.youtube.com/watch?v=tbAKzvM7QTE&t=3009s"
+              class="focus__link-visited" target="_blank"> : visited
+            </a>
+            <a href="https://www.youtube.com/watch?v=tbAKzvM7QTE&t=3009s"
+              class="focus__link-visited" target="_blank">: visited
+            </a><a href="https://google.com"
+              class="focus__link-visited" target="_blank"> : visited
+            </a><a href="https://google.ng" class="focus__link-visited"
+              target="_blank"> :
+              visited
+            </a><a href="#" class="focus__link-visited" target="_blank"> :
+              visited
+            </a>
+            <p>Відвідані посилання</p>
+          </div>
+          <div class="focus__block ">
+            <a href="#link"
+              class="focus__link-visited" target="_blank"> : target-target
+            </a>
+            <a href="https://www.youtube.com/watch?v=tbAKzvM7QTE&t=3009s"
+              class="focus__link-visited" target="_blank">: target
+            </a><a href="https://google.com"
+              class="focus__link-visited" target="_blank"> : target
+            </a><a href="https://google.sk" class="focus__link-visited"
+              target="_blank"> :
+              target
+            </a>
+            <div id="link">На мене діють через - target-target</div>
+          </div>
+        </div>
+        <h3 class="pseudo-classes__subtitle"> Псевдокласи положення у коді:</h3>
+        <div class="pseudo-classes__state ">
+          <h4>
+            Псевдоклас :first-child — звернення до першого елементу в коді:
+          </h4>
+          <div class="pseudo-classes__text">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam
+              saepe ipsum tempora corrupti, modi nesciunt? Est aut accusantium
+              culpa, delectus distinctio rerum suscipit corporis nisi,
+              laudantium porro magnam, dolore consectetur?
+            </p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam
+              saepe ipsum tempora corrupti, modi nesciunt? Est aut accusantium
+              culpa, delectus distinctio rerum suscipit corporis nisi,
+              laudantium porro magnam, dolore consectetur?
+            </p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam
+              saepe ipsum tempora corrupti, modi nesciunt? Est aut accusantium
+              culpa, delectus distinctio rerum suscipit corporis nisi,
+              laudantium porro magnam, dolore consectetur?
+            </p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam
+              saepe ipsum tempora corrupti, modi nesciunt? Est aut accusantium
+              culpa, delectus distinctio rerum suscipit corporis nisi,
+              laudantium porro magnam, dolore consectetur?
+            </p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam
+              saepe ipsum tempora corrupti, modi nesciunt? Est aut accusantium
+              culpa, delectus distinctio rerum suscipit corporis nisi,
+              laudantium porro magnam, dolore consectetur?
+            </p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam
+              saepe ipsum tempora corrupti, modi nesciunt? Est aut accusantium
+              culpa, delectus distinctio rerum suscipit corporis nisi,
+              laudantium porro magnam, dolore consectetur?
+            </p>
+          </div>
+          <h4>
+            Псевдоклас :first-of-type — звернення до першого вказаного об'єкту в
+            коді:
+          </h4>
+          <div class="pseudo-classes__text">
+            <a href="#">Я посилання</a>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam
+              saepe ipsum tempora corrupti, modi nesciunt? Est aut accusantium
+              culpa, delectus distinctio rerum suscipit corporis nisi,
+              laudantium porro magnam, dolore consectetur?
+            </p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam
+              saepe ipsum tempora corrupti, modi nesciunt? Est aut accusantium
+              culpa, delectus distinctio rerum suscipit corporis nisi,
+              laudantium porro magnam, dolore consectetur?
+            </p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam
+              saepe ipsum tempora corrupti, modi nesciunt? Est aut accusantium
+              culpa, delectus distinctio rerum suscipit corporis nisi,
+              laudantium porro magnam, dolore consectetur?
+            </p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam
+              saepe ipsum tempora corrupti, modi nesciunt? Est aut accusantium
+              culpa, delectus distinctio rerum suscipit corporis nisi,
+              laudantium porro magnam, dolore consectetur?
+            </p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam
+              saepe ipsum tempora corrupti, modi nesciunt? Est aut accusantium
+              culpa, delectus distinctio rerum suscipit corporis nisi,
+              laudantium porro magnam, dolore consectetur?
+            </p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam
+              saepe ipsum tempora corrupti, modi nesciunt? Est aut accusantium
+              culpa, delectus distinctio rerum suscipit corporis nisi,
+              laudantium porro magnam, dolore consectetur?
+            </p>
+          </div>
+          <h4>
+            Псевдоклас :last-child — звернення до останнього елементу в коді:
+          </h4>
+          <div class="pseudo-classes__text last-child">
+
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam
+              saepe ipsum tempora corrupti, modi nesciunt? Est aut accusantium
+              culpa, delectus distinctio rerum suscipit corporis nisi,
+              laudantium porro magnam, dolore consectetur?
+            </p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam
+              saepe ipsum tempora corrupti, modi nesciunt? Est aut accusantium
+              culpa, delectus distinctio rerum suscipit corporis nisi,
+              laudantium porro magnam, dolore consectetur?
+            </p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam
+              saepe ipsum tempora corrupti, modi nesciunt? Est aut accusantium
+              culpa, delectus distinctio rerum suscipit corporis nisi,
+              laudantium porro magnam, dolore consectetur?
+            </p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam
+              saepe ipsum tempora corrupti, modi nesciunt? Est aut accusantium
+              culpa, delectus distinctio rerum suscipit corporis nisi,
+              laudantium porro magnam, dolore consectetur?
+            </p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam
+              saepe ipsum tempora corrupti, modi nesciunt? Est aut accusantium
+              culpa, delectus distinctio rerum suscipit corporis nisi,
+              laudantium porro magnam, dolore consectetur?
+            </p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam
+              saepe ipsum tempora corrupti, modi nesciunt? Est aut accusantium
+              culpa, delectus distinctio rerum suscipit corporis nisi,
+              laudantium porro magnam, dolore consectetur?
+            </p>
+          </div>
+          <h4>
+            Псевдоклас :nth-child() — звернення до конкретного елементу
+            в коді:
+            - порядковий номер елементу;
+            - odd — не парні;
+            - even - парні.:
+          </h4>
+          <div class="pseudo-classes__text nth-child">
+
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam
+              saepe ipsum tempora corrupti, modi nesciunt? Est aut accusantium
+              culpa, delectus distinctio rerum suscipit corporis nisi,
+              laudantium porro magnam, dolore consectetur?
+            </p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam
+              saepe ipsum tempora corrupti, modi nesciunt? Est aut accusantium
+              culpa, delectus distinctio rerum suscipit corporis nisi,
+              laudantium porro magnam, dolore consectetur?
+            </p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam
+              saepe ipsum tempora corrupti, modi nesciunt? Est aut accusantium
+              culpa, delectus distinctio rerum suscipit corporis nisi,
+              laudantium porro magnam, dolore consectetur?
+            </p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam
+              saepe ipsum tempora corrupti, modi nesciunt? Est aut accusantium
+              culpa, delectus distinctio rerum suscipit corporis nisi,
+              laudantium porro magnam, dolore consectetur?
+            </p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam
+              saepe ipsum tempora corrupti, modi nesciunt? Est aut accusantium
+              culpa, delectus distinctio rerum suscipit corporis nisi,
+              laudantium porro magnam, dolore consectetur?
+            </p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam
+              saepe ipsum tempora corrupti, modi nesciunt? Est aut accusantium
+              culpa, delectus distinctio rerum suscipit corporis nisi,
+              laudantium porro magnam, dolore consectetur?
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="main__pseudo-elements pseudo-elements">
+        <h2 class="pseudo-elements_title">Псевдоелементи</h2>
+        <div class="pseudo-elements_example">
+          Псевдоелементи
+        </div>
+      </section>
+      <section class="main_list">
+        <div class="list">
+          <ul class="items">
+            <li class="item">Unlimited product updates
+            </li>
+            <li class="item">Unlimited product </li>
+            <li class="item">Unlimited product
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="main-game game">
+        <h2 class="game__title"> Гайда за грибами</h2>
+        <div class="game__container">
+          <div class="game__start">
+            <img
+              src="/img/foni-papik-pro-acfa-p-kartinki-devochka-na-prozrachnom-fone-23.png"
+              alt>
+
+          </div>
+          <div class="game__block block">
+            <div class="block__block1">
+              Гайда за грибами</div>
+            <div class="block__block2">
+            </div>
+            <div class="block__block3"></div>
+            <div class="block__block4"></div>
+            <div class="block__block5"></div>
+            <div class="block_block8"></div>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+    <footer class="footer">
+      <a href="#block">На гору</a>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,268 @@
+@import url("reset.css");
+@import url("fonts.css");
+
+body {
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  max-width: 2200px;
+  margin: 0 auto;
+}
+#block {
+  font-size: 75px;
+  font-style: italic;
+  text-align: center;
+  background-image: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  background-clip: text;
+  padding-left: 50px;
+
+  margin-bottom: 25px;
+}
+.main__pseudo-classes {
+  padding: 20px;
+}
+.pseudo-classes__block {
+  margin-bottom: 70px;
+}
+.pseudo-classes__title {
+  font-size: 45px;
+  color: rgb(5, 112, 34);
+  margin-bottom: 25px;
+}
+.pseudo-classes__subtitle {
+  margin-bottom: 25px;
+  font-size: 35px;
+}
+.pseudo-classes__hover {
+  display: block;
+}
+
+.hover__block,
+.active__block,
+.focus__block {
+  font-size: 20px;
+  border: 5px solid green;
+  border-radius: 10px;
+  padding: 15px;
+  width: 400px;
+  height: 300px;
+  vertical-align: top;
+  display: inline-block;
+}
+.hover__link:hover {
+  color: blueviolet;
+}
+.active__link:hover {
+  color: blueviolet;
+}
+.hover__img {
+  opacity: 0;
+}
+
+.hover__block:hover .hover__img {
+  opacity: 1;
+}
+.hover__img:active {
+  opacity: 1;
+}
+.focus__link1:focus {
+  outline: 5px solid rgb(247, 12, 12);
+  border-radius: 5px;
+}
+.focus__block a {
+  margin-bottom: 25px;
+}
+.focus__link,
+.focus__link-visited {
+  display: block;
+  text-align: center;
+}
+.focus__link:focus {
+  outline: 5px solid rgb(247, 12, 12);
+  border-radius: 5px;
+}
+
+.focus__link-visited:visited {
+  color: rgb(71, 15, 168);
+}
+#link:target {
+  text-decoration: underline;
+  color: aqua;
+}
+h4 {
+  font-size: 45px;
+  margin-bottom: 25px;
+}
+.pseudo-classes__text > * {
+  margin-bottom: 35px;
+}
+.pseudo-classes__text p:first-child {
+  color: rgb(7, 136, 76);
+}
+.pseudo-classes__text p:first-of-type {
+  color: rgb(7, 136, 76);
+}
+.last-child p:last-child {
+  color: rgb(7, 136, 76);
+}
+.last-child p:first-child {
+  color: rgb(18, 17, 17);
+}
+.nth-child p:nth-child(odd) {
+  color: rgb(6, 87, 60);
+}
+.nth-child p:nth-child(even) {
+  color: rgb(26, 6, 87);
+}
+.nth-child p:nth-child(1) {
+  color: rgb(87, 6, 42);
+}
+.pseudo-elements_title {
+  font-size: 45px;
+  color: rgb(5, 112, 34);
+  margin-bottom: 25px;
+}
+.pseudo-elements {
+  margin-bottom: 20px;
+}
+.pseudo-elements_example::after {
+  content: "";
+  background: url("../img/Без.jpg") no-repeat;
+  display: inline-block;
+  width: 204px;
+  height: 192px;
+}
+.pseudo-elements_example::before {
+  content: "";
+  background: url("../img/Без.jpg") 0 0 no-repeat;
+  display: inline-block;
+  width: 204px;
+  height: 192px;
+}
+.list {
+  max-width: 350px;
+  background-color: rgba(225, 244, 255, 1);
+  padding: 16px 40px 16px;
+  margin: 0 auto 70px;
+  border-radius: 8px;
+}
+
+.item {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: #252b42;
+  line-height: 1.7;
+  min-height: 32px;
+  letter-spacing: 0.20000000298023224px;
+}
+.list .item:not(:last-child) {
+  margin-bottom: 15px;
+}
+.item::before {
+  content: "";
+  background: url(../img/Check-badge.svg) no-repeat;
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+/* -----------------game--------------------------------------- */
+.game__title {
+  text-align: center;
+
+  font-size: 45px;
+  color: green;
+}
+.game__container {
+  max-width: 1500px;
+  margin: 0 auto;
+  background: url(../img/image_48045.jpg) center no-repeat;
+  background-size: cover;
+  height: 1500px;
+}
+.game__start {
+  width: 200px;
+  margin-top: 1000px;
+  margin-left: 100px;
+  display: inline-block;
+}
+
+[class*="block__"] {
+  background-color: rgb(3, 106, 22);
+  border-radius: 10px;
+  text-align: center;
+}
+
+[class*="block__"]:not(.block__block1) {
+  visibility: hidden;
+}
+
+.block__block1 {
+  margin-left: 155px;
+  width: 150px;
+  height: 55px;
+}
+
+.block__block2 {
+  margin-left: 255px;
+  margin-top: -45px;
+  width: 50px;
+  height: 155px;
+}
+.block__block1:hover + .block__block2,
+.block__block2:hover {
+  visibility: visible;
+}
+
+.block__block3 {
+  margin-left: 255px;
+  margin-top: -45px;
+  width: 250px;
+  height: 45px;
+}
+.block__block2:hover + .block__block3,
+.block__block3:hover {
+  visibility: visible;
+}
+.block__block4 {
+  margin-left: 465px;
+  margin-top: -45px;
+  width: 50px;
+  height: 155px;
+}
+.block__block3:hover + .block__block4,
+.block__block4:hover {
+  visibility: visible;
+}
+.block__block5 {
+  margin-left: 465px;
+  margin-top: -45px;
+  width: 550px;
+  height: 45px;
+}
+.block__block4:hover + .block__block5,
+.block__block5:hover {
+  visibility: visible;
+}
+
+.block_block8 {
+  background: url(../img/foni-papik-pro-cnr3-p-kartinki-gribi-na-prozrachnom-fone-1.png)
+    no-repeat;
+  background-size: contain;
+  width: 150px;
+  height: 150px;
+  margin-left: 1000px;
+  display: inline-block;
+  margin-top: -155px;
+}
+.game__block:hover {
+  visibility: visible;
+}
