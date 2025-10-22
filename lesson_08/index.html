@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Lesson_8</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="block">
+        Заняття 8: Веб графіка, формати зображень
+      </h1>
+      <div class="logo">
+        <img src="img/icons/Shanti.svg" alt="logo">
+        <div class="logo_text"> ICON, VECTOR, SVG</div>
+      </div>
+    </header>
+    <main>
+      <section class="first">
+        <div class="section-first__decor">
+          <img src="img/imgs/image1.webp" alt="decorative flower1">
+          <p>Decor, bitmap, PNG
+            ~ WEBP
+          </p>
+        </div>
+        <div class="section-first__img">
+          <picture>
+            <source
+              srcset="img/imgs/coach/coach.avif 1x, img/imgs/coach/coach(1).avif 2x, img/imgs/coach/coach(2).avif 3x "
+              type="image/avif">
+            <source
+              srcset="img/imgs/coach/coach.webp 1x, img/imgs/coach/coach(1).webp 2x, img/imgs/coach/coach(2).webp 3x "
+              type="image/webp">
+            <img src="img/imgs/coach/coach.jpg"
+              alt="the trainer shows the exercise">
+          </picture>
+          <p>Content, bitmap, JPG
+            ~ WEBP(1х, 2х, 3х), ABIF(1х, 2х, 3х)
+          </p>
+        </div>
+        <div class="section-first__icon">
+          <img src="img/icons/Group.svg" alt="decorative icon">
+          <p>DECOR, ICON, VECTOR, SVG
+          </p>
+        </div>
+        <div class="section-first__icon">
+          <img src="img/icons/right-arrow.svg" alt="decorative icon">
+          <p>CONTENT, ICON, VECTOR, SVG
+          </p>
+        </div>
+        <div class="section-first__decor">
+          <img src="img/imgs/image(1).webp" alt="decorative flower2">
+          <p>Decor, bitmap, PNG
+            ~ WEBP </p>
+        </div>
+      </section>
+      <section class="second">
+        <div class="section-second__img">
+          <picture>
+            <source
+              srcset="img/imgs/image-second/image-second.avif 1x, img/imgs/image-second/image-second(1).avif 2x, img/imgs/image-second/image-second(2).avif 3x "
+              type="image/avif">
+            <source
+              srcset="img/imgs/image-second/image-second.webp 1x, img/imgs/image-second/image-second(1).webp 2x, img/imgs/image-second/image-second(2).webp 3x "
+              type="image/webp">
+            <img src="img/imgs/image-second/image-second.jpg"
+              alt="the trainer shows the exercise">
+          </picture>
+          <p>Content, bitmap, JPG
+            ~ <br> WEBP(1х, 2х, 3х), ABIF(1х, 2х, 3х)
+          </p>
+        </div>
+      </section>
+      <section class="three">
+        <picture>
+          <source
+            srcset="img/imgs/Yoga-Beginner/Yoga-Beginner.avif 1x, img/imgs/Yoga-Beginner/Yoga-Beginner(2).avif 2x, img/imgs/Yoga-Beginner/Yoga-Beginner(3).avif 3x "
+            type="image/avif">
+          <source
+            srcset="img/imgs/Yoga-Beginner/Yoga-Beginner.webp 1x, img/imgs/Yoga-Beginner/Yoga-Beginner(2).webp 2x, img/imgs/Yoga-Beginner/Yoga-Beginner(3).webp 3x "
+            type="image/webp">
+          <img src="img/imgs/Yoga-Beginner/Yoga-Beginner.jpg"
+            alt="beginner yoga trainer" class="three-img img">
+        </picture>
+        <picture>
+          <source
+            srcset="img/imgs/Regular-Practice/Regular-Practice.avif 1x, img/imgs/Regular-Practice/Regular-Practice(2).avif 2x, img/imgs/Regular-Practice/Regular-Practice(3).avif 3x "
+            type="image/avif">
+          <source
+            srcset="img/imgs/Regular-Practice/Regular-Practice.webp 1x, img/imgs/Regular-Practice/Regular-Practice(2).webp 2x, img/imgs/Regular-Practice/Regular-Practice(3).webp 3x "
+            type="image/webp">
+          <img src="img/imgs/Regular-Practice/Regular-Practice.jpg"
+            alt="Regular-Practice" class="three-img img">
+        </picture>
+        <picture>
+          <source
+            srcset="img/imgs/Individual-Practice/Individual-Practice.avif 1x, img/imgs/Individual-Practice/Individual-Practice(2).avif 2x, img/imgs/Individual-Practice/Individual-Practice(3).avif 3x "
+            type="image/avif">
+          <source
+            srcset="img/imgs/Individual-Practice/Individual-Practice.webp 1x, img/imgs/Individual-Practice/Individual-Practice(2).webp 2x, img/imgs/Individual-Practice/Individual-Practice(3).webp 3x "
+            type="image/webp">
+          <img src="img/imgs/Individual-Practice/Individual-Practice.jpg"
+            alt="Individual-Practice" class="three-img img">
+        </picture>
+      </section>
+      <div class="text">Content, bitmap, JPG ~
+        WEBP(1х, 2х, 3х), ABIF(1х, 2х, 3х)
+      </div>
+    </main>
+    <footer class="footer">
+      <a href="#block">На гору</a>
+    </footer>
+  </body>
+</html>
