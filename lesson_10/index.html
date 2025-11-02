@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap"
+      rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair:wght@400&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Lesson_10</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container">
+          <h1 class="header__title">Заняття 10: Позиціонування </h1>
+        </div>
+      </header>
+      <main>
+        <section class="position">
+          <div class="position__static">
+            <h2 class="position__title">Position: static</h2>
+            <div class="position__block block-position">
+              <div class="block-position__one">
+                <p>Position: static; — значення static це значення за
+                  замовчуванням його не потрібно вказувати;</p>
+              </div>
+              <div class="block-position__two">
+                <p>ПРАВИЛО — властивості top, left, right, bottom та z-index
+                  працюють тільки зі значеннями position відмінним від static.
+                </p>
+              </div>
+              <div class="block-position__three"><p> Блок знаходиться там, де
+                  він
+                  відображений у коді</p></div>
+            </div>
+          </div>
+          <div class="position__relative">
+            <h2 class="position__title">Position: relative</h2>
+            <div class="position__block block-position">
+              <div class="block-position__one">
+                <p>Position: relative; — об'єкт позиціонується відносно свого
+                  поточного місця положення в коді.</p>
+              </div>
+              <div class="block-position__two ">
+                <p>З position:relative; працюють властивості top, left, right,
+                  bottom та z-index
+                </p>
+              </div>
+              <div
+                class="block-position__three block-position__three--relative"><p>
+                  Блок відносно свого поточного місця положення в коді зміщений
+                  в
+                  ліво на
+                  50px та піднятий вгору на 50px</p></div>
+            </div>
+          </div>
+          <div class="position__index">
+            <h2 class="position__title">Z-index</h2>
+            <div class="position__block block-position">
+              <div class="block-position__one block-position__one--lower">
+
+                <p>z-index — перекривання обʼєктів одного іншим. Найвищий
+                  z-index (тобто ближче до нас) в елемента, що попереду </p>
+              </div>
+              <div class="block-position__two  block-position__two--average">
+                <p>Z-index керує положенням елементів по осі Z
+                </p>
+              </div>
+              <div class="block-position__three block-position__three--top">
+                <p> Блок з найбільшим Z-index</p>
+              </div>
+            </div>
+            <div class="position__block block-position">
+              <div
+                class="block-position__one block-position__one--lower block-position__one--three">
+              </div>
+              <div
+                class="block-position__two  block-position__two--average block-position__two--second"></div>
+
+            </div>
+            <div
+              class="block-position__three block-position__three--top block-position__three--one">
+            </div>
+          </div>
+          <div class="position__absolute">
+            <h2 class="position__title">Position: absolute</h2>
+            <div
+              class="position__block block-position position__block--relative">
+
+              <div class="block-position__one">
+                <p>Position: absolute; — абсолютне (безумовне) позиціонування.
+                  Об'єкт позиціонується відносно першого батьківського елементу,
+                  position якого відмінний від static.
+                </p>
+              </div>
+              <div class="block-position__two">
+                <p>
+                </p>
+              </div>
+              <div
+                class="block-position__three block-position__three--absolute"><p>
+                  Об'єкт втрачає свою блочну сутність та простір який він
+                  займав.</p></div>
+            </div>
+          </div>
+          <div class="position__ sticky">
+            <h2 class="position__title">Position: sticky</h2>
+            <div
+              class="position__block block-position position__block--sticky">
+
+              <div class="block-position__one block-position__one--sticky">
+                <p>Position: sticky; — гібридне поєднання значень static та
+                  fixed.
+                </p>
+              </div>
+              <div class="block-position__sticky1">
+
+              </div>
+              <div class="block-position__two block-position__two--sticky">
+                <p>Спочатку елемент поводитися як static, але після того, як
+                  скрол доходить до нього, стає fixed. Залишається блочним.
+                </p>
+              </div>
+              <div class="block-position__sticky"></div>
+            </div>
+          </div>
+        </section>
+        <section class="domachca">
+
+          <h2 class="domachca__title">Домашня робота</h2>
+          <div class="domachca__navigation">
+            <nav class="domachca__menu menu">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a href="#" class="menu__link"> Про нас </a>
+                </li>
+                <li class="menu__item menu__item--arrow">
+                  <a href="#" class="menu__link menu__link--arrow"> Каталог </a>
+                  <ul class="menu__menu-sub sub-menu">
+                    <li class="sub-menu__item"> <a href="#"
+                        class="sub-menu__link">Проекти </a></li>
+                    <li class="sub-menu__item sub-menu__item--activ"> <a
+                        href="#"
+                        class="sub-menu__link sub-menu__link--marked">Матеріали</a>
+                      <ul class="sub-menu__under-menu menu-under">
+                        <li class="menu-under__item"> <a href="#"
+                            class="menu-under__link">Прості
+                            матеріали</a></li>
+                        <li class="menu-under__item"><a href="#"
+                            class="menu-under__link"> Складні матеріали</a></li>
+                      </ul>
+                    </li>
+                    <li class="sub-menu__item"> <a href="#"
+                        class="sub-menu__link"> Додаткові декорації</a>
+                    </li>
+                    <li class="sub-menu__item"> <a href="#"
+                        class="sub-menu__link"> Рекомендації</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Наші досягнення </a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link"> Акції </a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Контакти </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </section>
+        <section class="list">
+          <div class="list__block">
+            <ul class="list__items">
+              <li class="list__item ">Unlimited product updates
+              </li>
+              <li class="list__item ">Unlimited product </li>
+              <li class="list__item ">Unlimited product
+              </li>
+              <li class=" list__item-gray">1GB Cloud storage
+              </li>
+              <li class="list__item-gray">Email and community support
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="images-face">
+          <div class="images-face__container">
+            <h3 class="images-face__title">Face
+            </h3>
+            <div class="images-face__cards">
+              <div class="images-face__card card">
+                <picture>
+                  <source
+                    srcset="img/imgs/cleanser/cleanser.avif 1x, img/imgs/cleanser/cleanse2x.avif 2x, img/imgs/cleanser/cleanser3x.avif 3x "
+                    type="image/avif">
+                  <source
+                    srcset="img/imgs/cleanser/cleanser.webp 1x, img/imgs/cleanser/cleanser2x.webp 2x, img/imgs/cleanser/cleanser3x.webp 3x "
+                    type="image/webp">
+                  <img src="img/imgs/cleanser/cleanser.jpg"
+                    class="card__img"
+                    alt="the young girl applied a cleansing product to her face">
+                </picture>
+                <h4 class="card__title">Cleansers
+                </h4>
+                <div class="card__link">
+                  <a href="#"> More</a>
+                </div>
+              </div>
+              <div class="images-face__card card">
+                <img src="img/imgs/eye-patches.jpg"
+                  class="card__img"
+                  alt="the young girl applied a cleansing product to her face">
+
+                <h4 class="card__title">Eye Patches
+                </h4>
+                <div class="card__link">
+                  <a href="#"> More</a>
+                </div>
+              </div>
+              <div class="images-face__card card">
+                <img src="img/imgs/mask.jpg"
+                  class="card__img"
+                  alt="the young girl applied a cleansing product to her face">
+
+                <h4 class="card__title">Мasks
+                </h4>
+                <div class="card__link">
+                  <a href="#"> More</a>
+                </div>
+              </div>
+            </div>
+            <a href class="images-face__button">More</a>
+          </div>
+        </section>
+
+      </main>
+      <footer class="footer ">
+        <a href="#">На гору</a>
+      </footer>
+    </div>
+  </body>
+</html>
