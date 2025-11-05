@@ -1,0 +1,210 @@
+@import url("reset.css");
+@import url("fonts.css");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,400&display=swap");
+body {
+  font-family: Lato, sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  max-width: 1950px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.wrapper {
+  position: relative;
+  min-height: 100%;
+  overflow: clip;
+}
+.header__container {
+  max-width: 1700px;
+  padding-block: 30px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.header__title {
+  color: #2f302c;
+  font-size: 56px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+}
+.car {
+  position: relative;
+  width: 1900px;
+  height: 1000px;
+  background-image: url(../img/imgs/16609.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  margin-bottom: 70px;
+}
+.car__wheel-left {
+  content: "";
+  width: 150px;
+  height: 150px;
+  background-color: #10110f;
+  border-radius: 50%;
+  border: 10px double gray;
+  position: relative;
+  top: 750px;
+  left: 250px;
+  z-index: 2;
+}
+.car__wheel-right {
+  content: "";
+  width: 150px;
+  height: 150px;
+  background-color: #10110f;
+  border-radius: 50%;
+  border: 10px double gray;
+  position: relative;
+  top: 600px;
+  left: 650px;
+  z-index: 2;
+}
+.car__bottom {
+  content: "";
+  width: 750px;
+  height: 50px;
+  background-color: #8a0e4e;
+  border-radius: 26% 26% 26% 26% / 31% 26% 31% 25%;
+  border: 10px double rgb(20, 4, 4);
+  position: relative;
+  top: 500px;
+  left: 150px;
+}
+.car__body {
+  content: "";
+  width: 720px;
+  height: 170px;
+  background-color: #8a0e4e;
+  border: 10px double rgb(20, 4, 4);
+  position: relative;
+  top: 300px;
+  left: 160px;
+  border-radius: 25% 50% 24% 24% / 64% 75% 9% 9%;
+}
+.car__top {
+  content: "";
+  width: 450px;
+  height: 150px;
+  background-color: #8a0e4e;
+  border: 10px double rgb(20, 4, 4);
+  position: relative;
+  top: 20px;
+  left: 260px;
+  border-radius: 46% 50% 24% 24% / 100% 97% 0% 0%;
+}
+.car__top::after {
+  content: "";
+  width: 20px;
+  height: 350px;
+  background-color: #8a0e4e;
+  border: 10px double rgb(20, 4, 4);
+  position: relative;
+  top: 170px;
+  left: 200px;
+  border-radius: 46% 50% 24% 24% / 100% 97% 0% 0%;
+}
+.car__top::before {
+  content: "";
+  width: 20px;
+  height: 350px;
+  background-color: #8a0e4e;
+  border: 10px double rgb(20, 4, 4);
+  position: relative;
+  top: 170px;
+  left: 180px;
+  border-radius: 46% 50% 24% 24% / 100% 97% 0% 0%;
+}
+.car__window-left {
+  content: "";
+  width: 200px;
+  height: 100px;
+  background-color: #f0e9ed;
+  border: 10px double rgb(20, 4, 4);
+  position: absolute;
+  top: 565px;
+  left: 280px;
+  border-radius: 100% 0% 0% 100% / 100% 50% 50% 0%;
+}
+.car__window-right {
+  content: "";
+  width: 200px;
+  height: 100px;
+  background-color: white;
+  border: 10px double rgb(20, 4, 4);
+  position: absolute;
+  top: 565px;
+  left: 480px;
+  border-radius: 0% 100% 0% 100% / 99% 100% 0% 1%;
+}
+.window-right__img {
+  position: relative;
+  left: 25px;
+  top: 8px;
+}
+
+.car__headlight {
+  content: "";
+  width: 50px;
+  height: 30px;
+  background-color: rgb(212, 220, 137);
+  border: 10px double rgb(20, 4, 4);
+  position: absolute;
+  top: 765px;
+  left: 820px;
+  border-radius: 25% 25% 25% 25% / 50% 47% 52% 50%;
+}
+.block {
+  padding-block: 70px;
+}
+
+.block__view {
+  display: inline-block;
+  padding: 25px;
+  width: 33%;
+}
+
+.block__titl {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.block__basic {
+  width: 250px;
+  height: 250px;
+  background-color: #95df64;
+  border: 4px double rgb(99, 3, 74);
+  border-radius: 20px;
+  margin: 0 auto;
+}
+.block__transform {
+  width: 180px;
+  height: 180px;
+  background-color: #a4c115;
+  border: 4px double rgb(25, 14, 22);
+  border-radius: 20px;
+}
+.block__translate {
+  transform: translate(10%, 20%);
+}
+.block__scale {
+  transform: scale(1.2);
+}
+.block__rotate {
+  transform: rotate(20deg);
+}
+.block__skew {
+  transform: skew(-10deg, -20deg);
+}
+.block__transform-origin {
+  transform-origin: 10px 100px;
+  transform: rotate(220deg);
+}
+.block__basic--transform-style {
+  perspective: 400px;
+  transform-style: preserve-3d;
+}
+.block__transform-style {
+  transform: rotateY(30deg);
+}
