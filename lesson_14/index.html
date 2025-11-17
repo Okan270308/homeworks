@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Lesson_14</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header id="header">
+        <div class="header__container">
+          <h1 class="header__title">Заняття 14: HTML Форми </h1>
+        </div>
+      </header>
+      <main>
+        <section class="registration">
+          <h2 class="registration__title">REGISTER TO FURNITUR
+
+          </h2>
+          <div class="registration__text">GET MONTHLY VOUCHER WITH JUST ONE
+            CLICK!</div>
+          <div class="registration__container">
+            <div class="registration__form form-registration">
+              <div class="form-registration__data">
+                <div class="form-registration__title">YOUR INFORMATION</div>
+                <div class="form-registration__request">
+                  You already have an account?
+                  <a href="#" class="form-registration__request-link"> Sign in
+                    here</a>
+                </div>
+                <form class="form-registration__form input" method="post"
+                  action="#">
+                  <div class="input__wrapper">
+                    <input type="text" placeholder="Your name" required
+                      name="name" class="input__info">
+                  </div>
+                  <div class="input__wrapper">
+                    <input type="email" placeholder="E-mail" required
+                      name="email" class="input__info input__info--email">
+                  </div>
+                  <div class="input__wrapper input__wrapper--width">
+                    <input type="tel" placeholder="Phone number" required
+                      name="tel" class="input__info input__info--tel">
+                  </div>
+                  <div class="input__wrapper">
+                    <input type="password" placeholder="Password" required
+                      name="password" class="input__info input__info--password">
+                  </div>
+                  <div class="input__wrapper input__wrapper--botton ">
+                    <input type="password" placeholder="Reset Password" required
+                      name="password"
+                      class="input__info input__info--reset-password">
+                  </div>
+                  <button class="form-registration__button">
+                    Create an account
+                  </button>
+                </form>
+              </div>
+              <div class="form-registration__banner banner">
+                <div class="banner__image">
+                  <img src="img/imgs/imgs/banner.jpg" alt="Five golden lamps">
+                </div>
+                <div class="banner__discount">
+                  <div class="banner__hot">HOT</div>
+                  <div class="banner__text">DISCOUNT <br> 25% FOR <br> NEW <br>
+                    MEMBER</div>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+        </section>
+      </main>
+      <footer class="footer ">
+        <a href="#header">На гору</a>
+      </footer>
+    </div>
+  </body>
+</html>
