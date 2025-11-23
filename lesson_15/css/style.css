@@ -51,7 +51,7 @@ body {
   border-bottom: 1px solid #92948e;
 }
 .header__search::before {
-  content: url(/img/svg/Vector.svg);
+  content: url(../img/svg/Vector.svg);
   position: absolute;
   top: 10px;
   left: 0;
